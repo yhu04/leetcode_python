@@ -11,6 +11,7 @@ class Solution(object):
             for j in range(i+1,len(nums)):
                 if nums[i]+nums[j]==target:
                     return[i,j]
+        # no result 
         return [-1,-1]
 
 # n 
