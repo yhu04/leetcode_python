@@ -5,5 +5,10 @@ class Solution(object):
         :rtype: bool
         """
         if x<0:
-        return False
-        
+            return False
+        reverse = 0
+        temp = x
+        while temp:
+            reverse = reverse*10 + temp%10
+            temp /= 10
+        return reverse==x
